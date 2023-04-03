@@ -29,6 +29,9 @@ const ProductsList = ({ products, loading }) => {
         AOS.init();
         AOS.refresh();
       }, []);
+      const handleScroll = () =>{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     return (
         <div>
             {
@@ -39,7 +42,7 @@ const ProductsList = ({ products, loading }) => {
                                 return (
                                     <div key={index}>
                                         <div className="relative m-auto " data-aos="fade-up" data-aos-duration="1000">
-                                            <div className='relative group '>
+                                            <div className='relative group ' onClick={()=>handleScroll()}>
                                                 <NavLink to={`/products/${item.id}`}>
                                                     <div className='h-[380px]' >
                                                         <img className="h-[100%] bg-center ndv__img" src={item.image} alt="img" />

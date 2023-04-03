@@ -15,7 +15,7 @@ const ProductItem = ({ product }) => {
     }
     return (
         <div>
-            <div className='flex items-center gap-x-12 sm:flex-wrap sm:text-center'>
+            <div className='flex items-center gap-x-12 sm:flex-wrap sm:text-center md:flex-wrap md:justify-between md:gap-0'>
                 <img src={product.image} alt="product" className='ndv__img w-[460px] h-[460px]' />
                 <div className="sm:mt-8">
                     <h2 className='text-4xl'>{product.name}</h2>

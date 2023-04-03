@@ -59,7 +59,7 @@ const Blog = () => {
                     <p className='text-lg text-gray-500 my-7 w-[60%] mx-auto sm:w-full'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
 
                 </div>
-                <div className='flex sm:flex-col'>
+                <div className='flex sm:flex-col md:flex-col md:text-center md:flex-wrap'>
                     <div className='basis-4/6'>
                         <h2 className='ndv__title'>Latest Posts</h2>
                         {
@@ -77,7 +77,7 @@ const Blog = () => {
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
                         </p>
                         <Link to={config.routes.about}>
-                            <p className='sm:translate-x-2/4 border-b-[1px] pb-2 hover:font-bold hover:border-color-second hover:duration-100 hover:ease-linear hover:transition-all  w-[50%] text-center border-light-coffee text-color-second hover:cursor-pointer'>Read the full Story</p>
+                            <p className='sm:translate-x-2/4 md:translate-x-2/4 border-b-[1px] pb-2 hover:font-bold hover:border-color-second hover:duration-100 hover:ease-linear hover:transition-all  w-[50%] text-center border-light-coffee text-color-second hover:cursor-pointer'>Read the full Story</p>
                         </Link>
                         <h2 className='ndv__title'>Authors</h2>
                         <MemberList />

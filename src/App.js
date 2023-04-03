@@ -4,8 +4,13 @@ import { useAuth } from "./firebaseConfig";
 import Home from "./pages/Home";
 import publicRoutes from "./routes/routes";
 import DefaultLayout from "./layout/DefaultLayout";
+import firebase from 'firebase/compat/app';
 function App() {
   const isAuthenticated = localStorage.getItem("token");
+  const currentUser = useAuth();
+  const user = firebase.auth().currentUser;
+  console.log(user);
+  console.log(currentUser);
   return (
     <div className="App">
       <div className="mx-auto text-base content-wrapper">
@@ -21,7 +26,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route
             path="/home"
-            element={isAuthenticated ? (<DefaultLayout><Home/></DefaultLayout>) : <Navigate to="/signin" />}
+            element={user ? (<DefaultLayout><Home/></DefaultLayout>) : <Navigate to="/signin" />}
           />
           {
             publicRoutes.map((route,index)=>{

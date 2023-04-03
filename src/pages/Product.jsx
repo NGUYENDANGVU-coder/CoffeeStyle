@@ -35,8 +35,8 @@ const Product = () => {
             <div className='wrapper'>
                 <ProductItem product={product} />
             </div>
-            <div className='flex sm:flex-wrap'>
-                <img src={images.productSlide} alt="slide" className='w-[50%] h-[450px] ndv__img sm:w-full' />
+            <div className='flex sm:flex-wrap md:flex-wrap'>
+                <img src={images.productSlide} alt="slide" className='w-[50%] h-[450px] ndv__img sm:w-full md:w-full' />
                 <div className='p-[70px] bg-[#1d1f2e] text-white sm:text-center'>
                     <h2 className='text-2xl'>Handmade by CoffeeStyle.</h2>
                     <p className='w-[60%] my-6 text-lg sm:w-full'>The most versatile furniture system ever created. Designed to fit your life.</p>

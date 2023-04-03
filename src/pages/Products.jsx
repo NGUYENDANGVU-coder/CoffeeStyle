@@ -54,7 +54,7 @@ const Products = () => {
         <div>
             {
                 loading ? <Loading /> : (
-                    <div>
+                    <div className='overflow-hidden'>
                         <section className="text-center wrapper" data-aos="fade-down">
                             <h1 className='text-4xl'>Our Products</h1>
                             <p className='text-lg text-gray-500 my-7'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>

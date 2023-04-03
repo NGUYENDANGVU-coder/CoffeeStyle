@@ -29,7 +29,7 @@ const Home = () => {
         AOS.refresh();
       }, []);
     return (
-        <div>
+        <div className='overflow-hidden'>
             <section className="slider mx-auto w-[95%] max-w-screen-2xl h-[530px] bg-[url('./images/slider-bg.jpg')] bg-cover bg-no-repeat bg-bottom" >
                 <div className="relative w-full h-full">
                     <div className='absolute w-full h-full bg-[#050827] opacity-20 z-1'>

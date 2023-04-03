@@ -35,7 +35,7 @@ const Contact = () => {
         e.target.reset();
     };
     return (
-        <div>
+        <div className='overflow-hidden'>
             <div className="text-center wrapper">
                 <div className='text-center'>
                     <h1 className='text-4xl'>Let's Connect</h1>

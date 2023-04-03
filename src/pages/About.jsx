@@ -12,7 +12,7 @@ const About = () => {
         AOS.refresh();
       }, []);
     return (
-        <div>
+        <div className='overflow-hidden'>
             <div className="text-center wrapper">
                 <div className='text-center'>
                     <h1 className='text-4xl'>About</h1>
@@ -24,16 +24,16 @@ const About = () => {
                     <h1 className='text-3xl mt-7 w-[70%] m-auto'>Overlaid the jeepers uselessly much excluding everyday life.</h1>
                     <p className='text-gray-500 text-md my-7 '>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                 </div>
-                <div className='flex my-[80px] text-left sm:flex-wrap' data-aos="fade-right" data-aos-duration="1000">
-                    <img src={images.about3} className='w-[460px] h-[380px] ndv__img shrink-0' alt="about_Img" />
-                    <div className='my-auto ml-16 sm:ml-0 sm:text-center'>
+                <div className='flex my-[80px] text-left sm:flex-wrap md:flex-wrap' data-aos="fade-right" data-aos-duration="1000">
+                    <img src={images.about3} className='w-[460px] h-[380px] ndv__img shrink-0 md:w-full' alt="about_Img" />
+                    <div className='my-auto ml-16 sm:ml-0 sm:text-center md:w-full md:ml-0 md:text-center'>
                         <h1 className='m-auto text-2xl mt-7'>Overlaid the jeepers uselessly much excluding everyday life.</h1>
                         <p className='text-gray-500 text-md my-7 '>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                     </div>
                 </div>
-                <div className='flex my-[80px] text-left flex-row-reverse sm:flex-col' data-aos="fade-left" data-aos-duration="1000">
-                    <img src={images.about4} className='w-[460px] h-[380px] ndv__img shrink-0 ml-16 sm:ml-0' alt="about_Img" />
-                    <div className='my-auto sm:text-center'>
+                <div className='flex my-[80px] text-left flex-row-reverse sm:flex-col md:flex-wrap' data-aos="fade-left" data-aos-duration="1000">
+                    <img src={images.about4} className='w-[460px] h-[380px] ndv__img shrink-0 ml-16 sm:ml-0 md:w-full' alt="about_Img" />
+                    <div className='my-auto sm:text-center md:w-full md:ml-0 md:text-center'>
                         <h1 className='m-auto text-2xl mt-7'>Overlaid the jeepers uselessly much excluding everyday life.</h1>
                         <p className='text-gray-500 text-md my-7 '>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
                     </div>

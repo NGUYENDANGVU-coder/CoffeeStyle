@@ -52,7 +52,7 @@ const SignIn = () => {
 
     const uiConfig = {
         signInFlow: "redirect",
-        signInSuccessUrl: "/profile",
+        signInSuccessUrl: "/products",
         signInOptions: [
             // {
             //     provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
